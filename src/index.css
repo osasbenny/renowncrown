@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-neutral-950 bg-white antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-green text-white px-8 py-3 rounded font-semibold transition-all duration-300 hover:bg-brand-green-light hover:shadow-lg active:scale-[0.98];
+  }
+  .btn-gold {
+    @apply bg-brand-gold text-white px-8 py-3 rounded font-semibold transition-all duration-300 hover:bg-brand-gold-light hover:shadow-lg active:scale-[0.98];
+  }
+  .btn-outline {
+    @apply border-2 border-brand-green text-brand-green px-8 py-3 rounded font-semibold transition-all duration-300 hover:bg-brand-green hover:text-white active:scale-[0.98];
+  }
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+  .container-app {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
